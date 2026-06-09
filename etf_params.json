@@ -1,0 +1,1422 @@
+{
+  "sectors": {
+    "CW8.PA": {
+      "Technologie": 0.26,
+      "Finance": 0.15,
+      "Industrie": 0.11,
+      "Santé": 0.1,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Conso. Défensive": 0.07,
+      "Énergie": 0.04,
+      "Matériaux": 0.04,
+      "Services Publics": 0.02,
+      "Immobilier": 0.02
+    },
+    "EWLD.PA": {
+      "Technologie": 0.26,
+      "Finance": 0.15,
+      "Industrie": 0.11,
+      "Santé": 0.1,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Conso. Défensive": 0.07,
+      "Énergie": 0.04,
+      "Matériaux": 0.04,
+      "Services Publics": 0.02,
+      "Immobilier": 0.02
+    },
+    "WPEA.PA": {
+      "Technologie": 0.26,
+      "Finance": 0.15,
+      "Industrie": 0.11,
+      "Santé": 0.1,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Conso. Défensive": 0.07,
+      "Énergie": 0.04,
+      "Matériaux": 0.04,
+      "Services Publics": 0.02,
+      "Immobilier": 0.02
+    },
+    "LCWD.PA": {
+      "Technologie": 0.26,
+      "Finance": 0.15,
+      "Industrie": 0.11,
+      "Santé": 0.1,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Conso. Défensive": 0.07,
+      "Énergie": 0.04,
+      "Matériaux": 0.04,
+      "Services Publics": 0.02,
+      "Immobilier": 0.02
+    },
+    "MWRD.PA": {
+      "Technologie": 0.26,
+      "Finance": 0.15,
+      "Industrie": 0.11,
+      "Santé": 0.1,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Conso. Défensive": 0.07,
+      "Énergie": 0.04,
+      "Matériaux": 0.04,
+      "Services Publics": 0.02,
+      "Immobilier": 0.02
+    },
+    "PLEM.PA": {
+      "Technologie": 0.26,
+      "Finance": 0.15,
+      "Industrie": 0.11,
+      "Santé": 0.1,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Conso. Défensive": 0.07,
+      "Énergie": 0.04,
+      "Matériaux": 0.04,
+      "Services Publics": 0.02,
+      "Immobilier": 0.02
+    },
+    "IWRD.L": {
+      "Technologie": 0.26,
+      "Finance": 0.15,
+      "Industrie": 0.11,
+      "Santé": 0.1,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Conso. Défensive": 0.07,
+      "Énergie": 0.04,
+      "Matériaux": 0.04,
+      "Services Publics": 0.02,
+      "Immobilier": 0.02
+    },
+    "URTH": {
+      "Technologie": 0.26,
+      "Finance": 0.15,
+      "Industrie": 0.11,
+      "Santé": 0.1,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Conso. Défensive": 0.07,
+      "Énergie": 0.04,
+      "Matériaux": 0.04,
+      "Services Publics": 0.02,
+      "Immobilier": 0.02
+    },
+    "ACWI": {
+      "Technologie": 0.26,
+      "Finance": 0.15,
+      "Industrie": 0.11,
+      "Santé": 0.1,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Conso. Défensive": 0.07,
+      "Énergie": 0.04,
+      "Matériaux": 0.04,
+      "Services Publics": 0.02,
+      "Immobilier": 0.02
+    },
+    "VT": {
+      "Technologie": 0.23,
+      "Finance": 0.17,
+      "Industrie": 0.11,
+      "Conso. Cyclique": 0.11,
+      "Santé": 0.1,
+      "Communication": 0.08,
+      "Conso. Défensive": 0.07,
+      "Énergie": 0.05,
+      "Matériaux": 0.04,
+      "Services Publics": 0.02,
+      "Immobilier": 0.02
+    },
+    "IWDA.AS": {
+      "Technologie": 0.26,
+      "Finance": 0.15,
+      "Industrie": 0.11,
+      "Santé": 0.1,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Conso. Défensive": 0.07,
+      "Énergie": 0.04,
+      "Matériaux": 0.04,
+      "Services Publics": 0.02,
+      "Immobilier": 0.02
+    },
+    "VWCE.DE": {
+      "Technologie": 0.23,
+      "Finance": 0.17,
+      "Industrie": 0.11,
+      "Conso. Cyclique": 0.11,
+      "Santé": 0.1,
+      "Communication": 0.08,
+      "Conso. Défensive": 0.07,
+      "Énergie": 0.05,
+      "Matériaux": 0.04,
+      "Services Publics": 0.02,
+      "Immobilier": 0.02
+    },
+    "EIMI.AS": {
+      "Technologie": 0.22,
+      "Finance": 0.22,
+      "Conso. Cyclique": 0.14,
+      "Communication": 0.1,
+      "Matériaux": 0.08,
+      "Énergie": 0.06,
+      "Industrie": 0.06,
+      "Santé": 0.04,
+      "Conso. Défensive": 0.05,
+      "Services Publics": 0.02,
+      "Immobilier": 0.01
+    },
+    "CSPX.AS": {
+      "Technologie": 0.31,
+      "Finance": 0.14,
+      "Santé": 0.12,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Industrie": 0.09,
+      "Conso. Défensive": 0.06,
+      "Énergie": 0.04,
+      "Matériaux": 0.03,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "VUAA.PA": {
+      "Technologie": 0.31,
+      "Finance": 0.14,
+      "Santé": 0.12,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Industrie": 0.09,
+      "Conso. Défensive": 0.06,
+      "Énergie": 0.04,
+      "Matériaux": 0.03,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "VUAA.AS": {
+      "Technologie": 0.31,
+      "Finance": 0.14,
+      "Santé": 0.12,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Industrie": 0.09,
+      "Conso. Défensive": 0.06,
+      "Énergie": 0.04,
+      "Matériaux": 0.03,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "IUSA.AS": {
+      "Technologie": 0.31,
+      "Finance": 0.14,
+      "Santé": 0.12,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Industrie": 0.09,
+      "Conso. Défensive": 0.06,
+      "Énergie": 0.04,
+      "Matériaux": 0.03,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "SXR8.DE": {
+      "Technologie": 0.31,
+      "Finance": 0.14,
+      "Santé": 0.12,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Industrie": 0.09,
+      "Conso. Défensive": 0.06,
+      "Énergie": 0.04,
+      "Matériaux": 0.03,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "P500.PA": {
+      "Technologie": 0.31,
+      "Finance": 0.14,
+      "Santé": 0.12,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Industrie": 0.09,
+      "Conso. Défensive": 0.06,
+      "Énergie": 0.04,
+      "Matériaux": 0.03,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "SWDA.AS": {
+      "Technologie": 0.26,
+      "Finance": 0.15,
+      "Industrie": 0.11,
+      "Santé": 0.1,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Conso. Défensive": 0.07,
+      "Énergie": 0.04,
+      "Matériaux": 0.04,
+      "Services Publics": 0.02,
+      "Immobilier": 0.02
+    },
+    "XDWD.DE": {
+      "Technologie": 0.26,
+      "Finance": 0.15,
+      "Industrie": 0.11,
+      "Santé": 0.1,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Conso. Défensive": 0.07,
+      "Énergie": 0.04,
+      "Matériaux": 0.04,
+      "Services Publics": 0.02,
+      "Immobilier": 0.02
+    },
+    "HMWO.AS": {
+      "Technologie": 0.26,
+      "Finance": 0.15,
+      "Industrie": 0.11,
+      "Santé": 0.1,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Conso. Défensive": 0.07,
+      "Énergie": 0.04,
+      "Matériaux": 0.04,
+      "Services Publics": 0.02,
+      "Immobilier": 0.02
+    },
+    "VWRL.AS": {
+      "Technologie": 0.23,
+      "Finance": 0.17,
+      "Industrie": 0.11,
+      "Conso. Cyclique": 0.11,
+      "Santé": 0.1,
+      "Communication": 0.08,
+      "Conso. Défensive": 0.07,
+      "Énergie": 0.05,
+      "Matériaux": 0.04,
+      "Services Publics": 0.02,
+      "Immobilier": 0.02
+    },
+    "SSAC.AS": {
+      "Technologie": 0.23,
+      "Finance": 0.17,
+      "Industrie": 0.11,
+      "Conso. Cyclique": 0.11,
+      "Santé": 0.1,
+      "Communication": 0.08,
+      "Conso. Défensive": 0.07,
+      "Énergie": 0.05,
+      "Matériaux": 0.04,
+      "Services Publics": 0.02,
+      "Immobilier": 0.02
+    },
+    "WEBG.DE": {
+      "Technologie": 0.23,
+      "Finance": 0.17,
+      "Industrie": 0.11,
+      "Conso. Cyclique": 0.11,
+      "Santé": 0.1,
+      "Communication": 0.08,
+      "Conso. Défensive": 0.07,
+      "Énergie": 0.05,
+      "Matériaux": 0.04,
+      "Services Publics": 0.02,
+      "Immobilier": 0.02
+    },
+    "SPY": {
+      "Technologie": 0.31,
+      "Finance": 0.14,
+      "Santé": 0.12,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Industrie": 0.09,
+      "Conso. Défensive": 0.06,
+      "Énergie": 0.04,
+      "Matériaux": 0.03,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "IVV": {
+      "Technologie": 0.31,
+      "Finance": 0.14,
+      "Santé": 0.12,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Industrie": 0.09,
+      "Conso. Défensive": 0.06,
+      "Énergie": 0.04,
+      "Matériaux": 0.03,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "VOO": {
+      "Technologie": 0.31,
+      "Finance": 0.14,
+      "Santé": 0.12,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Industrie": 0.09,
+      "Conso. Défensive": 0.06,
+      "Énergie": 0.04,
+      "Matériaux": 0.03,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "VTI": {
+      "Technologie": 0.31,
+      "Finance": 0.14,
+      "Santé": 0.12,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Industrie": 0.09,
+      "Conso. Défensive": 0.06,
+      "Énergie": 0.04,
+      "Matériaux": 0.03,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "VGK": {
+      "Finance": 0.2,
+      "Industrie": 0.16,
+      "Santé": 0.14,
+      "Conso. Cyclique": 0.12,
+      "Conso. Défensive": 0.11,
+      "Matériaux": 0.07,
+      "Énergie": 0.07,
+      "Technologie": 0.07,
+      "Communication": 0.04,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "IEUR": {
+      "Finance": 0.2,
+      "Industrie": 0.16,
+      "Santé": 0.14,
+      "Conso. Cyclique": 0.12,
+      "Conso. Défensive": 0.11,
+      "Matériaux": 0.07,
+      "Énergie": 0.07,
+      "Technologie": 0.07,
+      "Communication": 0.04,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "EZU": {
+      "Finance": 0.2,
+      "Industrie": 0.16,
+      "Santé": 0.14,
+      "Conso. Cyclique": 0.12,
+      "Conso. Défensive": 0.11,
+      "Matériaux": 0.07,
+      "Énergie": 0.07,
+      "Technologie": 0.07,
+      "Communication": 0.04,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "ESE.PA": {
+      "Finance": 0.2,
+      "Industrie": 0.16,
+      "Santé": 0.14,
+      "Conso. Cyclique": 0.12,
+      "Conso. Défensive": 0.11,
+      "Matériaux": 0.07,
+      "Énergie": 0.07,
+      "Technologie": 0.07,
+      "Communication": 0.04,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "LYXEL.PA": {
+      "Finance": 0.2,
+      "Industrie": 0.16,
+      "Santé": 0.14,
+      "Conso. Cyclique": 0.12,
+      "Conso. Défensive": 0.11,
+      "Matériaux": 0.07,
+      "Énergie": 0.07,
+      "Technologie": 0.07,
+      "Communication": 0.04,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "MSEU.PA": {
+      "Finance": 0.2,
+      "Industrie": 0.16,
+      "Santé": 0.14,
+      "Conso. Cyclique": 0.12,
+      "Conso. Défensive": 0.11,
+      "Matériaux": 0.07,
+      "Énergie": 0.07,
+      "Technologie": 0.07,
+      "Communication": 0.04,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "MEUD.PA": {
+      "Finance": 0.2,
+      "Industrie": 0.16,
+      "Santé": 0.14,
+      "Conso. Cyclique": 0.12,
+      "Conso. Défensive": 0.11,
+      "Matériaux": 0.07,
+      "Énergie": 0.07,
+      "Technologie": 0.07,
+      "Communication": 0.04,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "SMEA.PA": {
+      "Finance": 0.2,
+      "Industrie": 0.16,
+      "Santé": 0.14,
+      "Conso. Cyclique": 0.12,
+      "Conso. Défensive": 0.11,
+      "Matériaux": 0.07,
+      "Énergie": 0.07,
+      "Technologie": 0.07,
+      "Communication": 0.04,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "IMEU.AS": {
+      "Finance": 0.2,
+      "Industrie": 0.16,
+      "Santé": 0.14,
+      "Conso. Cyclique": 0.12,
+      "Conso. Défensive": 0.11,
+      "Matériaux": 0.07,
+      "Énergie": 0.07,
+      "Technologie": 0.07,
+      "Communication": 0.04,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "IESE.AS": {
+      "Finance": 0.2,
+      "Industrie": 0.16,
+      "Santé": 0.14,
+      "Conso. Cyclique": 0.12,
+      "Conso. Défensive": 0.11,
+      "Matériaux": 0.07,
+      "Énergie": 0.07,
+      "Technologie": 0.07,
+      "Communication": 0.04,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "50E.PA": {
+      "Finance": 0.2,
+      "Industrie": 0.16,
+      "Santé": 0.14,
+      "Conso. Cyclique": 0.12,
+      "Conso. Défensive": 0.11,
+      "Matériaux": 0.07,
+      "Énergie": 0.07,
+      "Technologie": 0.07,
+      "Communication": 0.04,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "CD8.PA": {
+      "Technologie": 0.31,
+      "Finance": 0.14,
+      "Santé": 0.12,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Industrie": 0.09,
+      "Conso. Défensive": 0.06,
+      "Énergie": 0.04,
+      "Matériaux": 0.03,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "500.PA": {
+      "Technologie": 0.31,
+      "Finance": 0.14,
+      "Santé": 0.12,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Industrie": 0.09,
+      "Conso. Défensive": 0.06,
+      "Énergie": 0.04,
+      "Matériaux": 0.03,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "PUST.PA": {
+      "Technologie": 0.31,
+      "Finance": 0.14,
+      "Santé": 0.12,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Industrie": 0.09,
+      "Conso. Défensive": 0.06,
+      "Énergie": 0.04,
+      "Matériaux": 0.03,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "SP5.PA": {
+      "Technologie": 0.31,
+      "Finance": 0.14,
+      "Santé": 0.12,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Industrie": 0.09,
+      "Conso. Défensive": 0.06,
+      "Énergie": 0.04,
+      "Matériaux": 0.03,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "SP500.PA": {
+      "Technologie": 0.31,
+      "Finance": 0.14,
+      "Santé": 0.12,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Industrie": 0.09,
+      "Conso. Défensive": 0.06,
+      "Énergie": 0.04,
+      "Matériaux": 0.03,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "LYXSP5.PA": {
+      "Technologie": 0.31,
+      "Finance": 0.14,
+      "Santé": 0.12,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Industrie": 0.09,
+      "Conso. Défensive": 0.06,
+      "Énergie": 0.04,
+      "Matériaux": 0.03,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "PSP5.PA": {
+      "Technologie": 0.31,
+      "Finance": 0.14,
+      "Santé": 0.12,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Industrie": 0.09,
+      "Conso. Défensive": 0.06,
+      "Énergie": 0.04,
+      "Matériaux": 0.03,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "ANX.PA": {
+      "Technologie": 0.58,
+      "Communication": 0.17,
+      "Conso. Cyclique": 0.14,
+      "Santé": 0.06,
+      "Industrie": 0.05
+    },
+    "PANX.PA": {
+      "Technologie": 0.58,
+      "Communication": 0.17,
+      "Conso. Cyclique": 0.14,
+      "Santé": 0.06,
+      "Industrie": 0.05
+    },
+    "CNDX.AS": {
+      "Technologie": 0.58,
+      "Communication": 0.17,
+      "Conso. Cyclique": 0.14,
+      "Santé": 0.06,
+      "Industrie": 0.05
+    },
+    "NASD.PA": {
+      "Technologie": 0.58,
+      "Communication": 0.17,
+      "Conso. Cyclique": 0.14,
+      "Santé": 0.06,
+      "Industrie": 0.05
+    },
+    "PUST.DE": {
+      "Technologie": 0.58,
+      "Communication": 0.17,
+      "Conso. Cyclique": 0.14,
+      "Santé": 0.06,
+      "Industrie": 0.05
+    },
+    "EEM": {
+      "Technologie": 0.22,
+      "Finance": 0.22,
+      "Conso. Cyclique": 0.14,
+      "Communication": 0.1,
+      "Matériaux": 0.08,
+      "Énergie": 0.06,
+      "Industrie": 0.06,
+      "Santé": 0.04,
+      "Conso. Défensive": 0.05,
+      "Services Publics": 0.02,
+      "Immobilier": 0.01
+    },
+    "VWO": {
+      "Technologie": 0.22,
+      "Finance": 0.22,
+      "Conso. Cyclique": 0.14,
+      "Communication": 0.1,
+      "Matériaux": 0.08,
+      "Énergie": 0.06,
+      "Industrie": 0.06,
+      "Santé": 0.04,
+      "Conso. Défensive": 0.05,
+      "Services Publics": 0.02,
+      "Immobilier": 0.01
+    },
+    "PAEEM.PA": {
+      "Technologie": 0.22,
+      "Finance": 0.22,
+      "Conso. Cyclique": 0.14,
+      "Communication": 0.1,
+      "Matériaux": 0.08,
+      "Énergie": 0.06,
+      "Industrie": 0.06,
+      "Santé": 0.04,
+      "Conso. Défensive": 0.05,
+      "Services Publics": 0.02,
+      "Immobilier": 0.01
+    },
+    "IS3N.DE": {
+      "Technologie": 0.22,
+      "Finance": 0.22,
+      "Conso. Cyclique": 0.14,
+      "Communication": 0.1,
+      "Matériaux": 0.08,
+      "Énergie": 0.06,
+      "Industrie": 0.06,
+      "Santé": 0.04,
+      "Conso. Défensive": 0.05,
+      "Services Publics": 0.02,
+      "Immobilier": 0.01
+    },
+    "VFEM.AS": {
+      "Technologie": 0.22,
+      "Finance": 0.22,
+      "Conso. Cyclique": 0.14,
+      "Communication": 0.1,
+      "Matériaux": 0.08,
+      "Énergie": 0.06,
+      "Industrie": 0.06,
+      "Santé": 0.04,
+      "Conso. Défensive": 0.05,
+      "Services Publics": 0.02,
+      "Immobilier": 0.01
+    },
+    "AEEM.PA": {
+      "Technologie": 0.22,
+      "Finance": 0.22,
+      "Conso. Cyclique": 0.14,
+      "Communication": 0.1,
+      "Matériaux": 0.08,
+      "Énergie": 0.06,
+      "Industrie": 0.06,
+      "Santé": 0.04,
+      "Conso. Défensive": 0.05,
+      "Services Publics": 0.02,
+      "Immobilier": 0.01
+    },
+    "PASI.PA": {
+      "Conso. Cyclique": 0.28,
+      "Communication": 0.202,
+      "Finance": 0.173,
+      "Industrie": 0.059,
+      "Conso. Défensive": 0.058,
+      "Technologie": 0.056,
+      "Santé": 0.055,
+      "Énergie": 0.04,
+      "Matériaux": 0.03,
+      "Immobilier": 0.024,
+      "Services Publics": 0.023
+    },
+    "WSML.AS": {
+      "Technologie": 0.26,
+      "Finance": 0.15,
+      "Industrie": 0.11,
+      "Santé": 0.1,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Conso. Défensive": 0.07,
+      "Énergie": 0.04,
+      "Matériaux": 0.04,
+      "Services Publics": 0.02,
+      "Immobilier": 0.02
+    },
+    "IWM": {
+      "Technologie": 0.31,
+      "Finance": 0.14,
+      "Santé": 0.12,
+      "Conso. Cyclique": 0.1,
+      "Communication": 0.09,
+      "Industrie": 0.09,
+      "Conso. Défensive": 0.06,
+      "Énergie": 0.04,
+      "Matériaux": 0.03,
+      "Services Publics": 0.01,
+      "Immobilier": 0.01
+    },
+    "XLK": {
+      "Technologie": 1.0
+    },
+    "QQQ": {
+      "Technologie": 0.58,
+      "Communication": 0.17,
+      "Conso. Cyclique": 0.14,
+      "Santé": 0.06,
+      "Industrie": 0.05
+    },
+    "IXN": {
+      "Technologie": 1.0
+    },
+    "XLF": {
+      "Finance": 1.0
+    },
+    "WFIN": {
+      "Finance": 1.0
+    },
+    "XLV": {
+      "Santé": 1.0
+    },
+    "IXJ": {
+      "Santé": 1.0
+    },
+    "XLE": {
+      "Énergie": 1.0
+    },
+    "XLI": {
+      "Industrie": 1.0
+    },
+    "XLY": {
+      "Conso. Cyclique": 1.0
+    },
+    "XLP": {
+      "Conso. Défensive": 1.0
+    },
+    "XLU": {
+      "Services Publics": 1.0
+    },
+    "XLB": {
+      "Matériaux": 1.0
+    },
+    "XLRE": {
+      "Immobilier": 1.0
+    },
+    "NUCL": {
+      "Énergie": 1.0
+    },
+    "GLD": {
+      "Or": 1.0
+    },
+    "IAU": {
+      "Or": 1.0
+    },
+    "SGOL": {
+      "Or": 1.0
+    },
+    "GDX": {
+      "Or": 1.0
+    },
+    "GDXJ": {
+      "Or": 1.0
+    },
+    "PHAU.AS": {
+      "Or": 1.0
+    },
+    "SGLD.AS": {
+      "Or": 1.0
+    },
+    "4GLD.DE": {
+      "Or": 1.0
+    },
+    "VZLD.DE": {
+      "Or": 1.0
+    },
+    "WGLD.PA": {
+      "Or": 1.0
+    },
+    "IBIT": {
+      "Crypto": 1.0
+    },
+    "FBTC": {
+      "Crypto": 1.0
+    },
+    "GBTC": {
+      "Crypto": 1.0
+    },
+    "ARKB": {
+      "Crypto": 1.0
+    },
+    "AGG": {
+      "Obligations": 1.0
+    },
+    "BND": {
+      "Obligations": 1.0
+    },
+    "TLT": {
+      "Obligations": 1.0
+    },
+    "IEF": {
+      "Obligations": 1.0
+    },
+    "SHY": {
+      "Obligations": 1.0
+    },
+    "HYG": {
+      "Obligations": 1.0
+    },
+    "LQD": {
+      "Obligations": 1.0
+    },
+    "IGOV": {
+      "Obligations": 1.0
+    },
+    "EMB": {
+      "Obligations": 1.0
+    },
+    "AGGH.AS": {
+      "Obligations": 1.0
+    },
+    "IEAC.AS": {
+      "Obligations": 1.0
+    },
+    "IBCX.AS": {
+      "Obligations": 1.0
+    },
+    "XGSG.DE": {
+      "Obligations": 1.0
+    },
+    "VGEA.AS": {
+      "Obligations": 1.0
+    },
+    "GIL0.DE": {
+      "Obligations": 1.0
+    }
+  },
+  "geo": {
+    "SPY": {
+      "Amérique du Nord": 1.0
+    },
+    "IVV": {
+      "Amérique du Nord": 1.0
+    },
+    "VOO": {
+      "Amérique du Nord": 1.0
+    },
+    "QQQ": {
+      "Amérique du Nord": 1.0
+    },
+    "VTI": {
+      "Amérique du Nord": 1.0
+    },
+    "SCHB": {
+      "Amérique du Nord": 1.0
+    },
+    "VUG": {
+      "Amérique du Nord": 1.0
+    },
+    "VTV": {
+      "Amérique du Nord": 1.0
+    },
+    "URTH": {
+      "Amérique du Nord": 0.67,
+      "Europe Dév.": 0.18,
+      "Asie-Pacifique Dév.": 0.12,
+      "Autres": 0.03
+    },
+    "ACWI": {
+      "Amérique du Nord": 0.62,
+      "Europe Dév.": 0.17,
+      "Asie-Pacifique Dév.": 0.1,
+      "Marchés Émergents": 0.09,
+      "Autres": 0.02
+    },
+    "VT": {
+      "Amérique du Nord": 0.6,
+      "Europe Dév.": 0.17,
+      "Asie-Pacifique Dév.": 0.1,
+      "Marchés Émergents": 0.1,
+      "Autres": 0.03
+    },
+    "IWRD.L": {
+      "Amérique du Nord": 0.67,
+      "Europe Dév.": 0.18,
+      "Asie-Pacifique Dév.": 0.12,
+      "Autres": 0.03
+    },
+    "IWDA.AS": {
+      "Amérique du Nord": 0.67,
+      "Europe Dév.": 0.18,
+      "Asie-Pacifique Dév.": 0.12,
+      "Autres": 0.03
+    },
+    "VWCE.DE": {
+      "Amérique du Nord": 0.62,
+      "Europe Dév.": 0.17,
+      "Asie-Pacifique Dév.": 0.1,
+      "Marchés Émergents": 0.09,
+      "Autres": 0.02
+    },
+    "EIMI.AS": {
+      "Marchés Émergents": 0.88,
+      "Asie-Pacifique Dév.": 0.05,
+      "Europe Dév.": 0.03,
+      "Autres": 0.04
+    },
+    "CSPX.AS": {
+      "Amérique du Nord": 1.0
+    },
+    "VUAA.PA": {
+      "Amérique du Nord": 1.0
+    },
+    "VUAA.AS": {
+      "Amérique du Nord": 1.0
+    },
+    "IUSA.AS": {
+      "Amérique du Nord": 1.0
+    },
+    "SXR8.DE": {
+      "Amérique du Nord": 1.0
+    },
+    "P500.PA": {
+      "Amérique du Nord": 1.0
+    },
+    "CW8.PA": {
+      "Amérique du Nord": 0.67,
+      "Europe Dév.": 0.18,
+      "Asie-Pacifique Dév.": 0.12,
+      "Autres": 0.03
+    },
+    "EWLD.PA": {
+      "Amérique du Nord": 0.67,
+      "Europe Dév.": 0.18,
+      "Asie-Pacifique Dév.": 0.12,
+      "Autres": 0.03
+    },
+    "WPEA.PA": {
+      "Amérique du Nord": 0.67,
+      "Europe Dév.": 0.18,
+      "Asie-Pacifique Dév.": 0.12,
+      "Autres": 0.03
+    },
+    "LCWD.PA": {
+      "Amérique du Nord": 0.67,
+      "Europe Dév.": 0.18,
+      "Asie-Pacifique Dév.": 0.12,
+      "Autres": 0.03
+    },
+    "MWRD.PA": {
+      "Amérique du Nord": 0.67,
+      "Europe Dév.": 0.18,
+      "Asie-Pacifique Dév.": 0.12,
+      "Autres": 0.03
+    },
+    "PLEM.PA": {
+      "Amérique du Nord": 0.67,
+      "Europe Dév.": 0.18,
+      "Asie-Pacifique Dév.": 0.12,
+      "Autres": 0.03
+    },
+    "SWDA.AS": {
+      "Amérique du Nord": 0.67,
+      "Europe Dév.": 0.18,
+      "Asie-Pacifique Dév.": 0.12,
+      "Autres": 0.03
+    },
+    "XDWD.DE": {
+      "Amérique du Nord": 0.67,
+      "Europe Dév.": 0.18,
+      "Asie-Pacifique Dév.": 0.12,
+      "Autres": 0.03
+    },
+    "HMWO.AS": {
+      "Amérique du Nord": 0.67,
+      "Europe Dév.": 0.18,
+      "Asie-Pacifique Dév.": 0.12,
+      "Autres": 0.03
+    },
+    "VWRL.AS": {
+      "Amérique du Nord": 0.62,
+      "Europe Dév.": 0.17,
+      "Asie-Pacifique Dév.": 0.1,
+      "Marchés Émergents": 0.09,
+      "Autres": 0.02
+    },
+    "SSAC.AS": {
+      "Amérique du Nord": 0.62,
+      "Europe Dév.": 0.17,
+      "Asie-Pacifique Dév.": 0.1,
+      "Marchés Émergents": 0.09,
+      "Autres": 0.02
+    },
+    "WEBG.DE": {
+      "Amérique du Nord": 0.62,
+      "Europe Dév.": 0.17,
+      "Asie-Pacifique Dév.": 0.1,
+      "Marchés Émergents": 0.09,
+      "Autres": 0.02
+    },
+    "CD8.PA": {
+      "Amérique du Nord": 1.0
+    },
+    "500.PA": {
+      "Amérique du Nord": 1.0
+    },
+    "PUST.PA": {
+      "Amérique du Nord": 1.0
+    },
+    "SP5.PA": {
+      "Amérique du Nord": 1.0
+    },
+    "SP500.PA": {
+      "Amérique du Nord": 1.0
+    },
+    "LYXSP5.PA": {
+      "Amérique du Nord": 1.0
+    },
+    "PSP5.PA": {
+      "Amérique du Nord": 1.0
+    },
+    "ANX.PA": {
+      "Amérique du Nord": 1.0
+    },
+    "PANX.PA": {
+      "Amérique du Nord": 1.0
+    },
+    "CNDX.AS": {
+      "Amérique du Nord": 1.0
+    },
+    "NASD.PA": {
+      "Amérique du Nord": 1.0
+    },
+    "PUST.DE": {
+      "Amérique du Nord": 1.0
+    },
+    "VGK": {
+      "Europe Dév.": 0.97,
+      "Autres": 0.03
+    },
+    "IEUR": {
+      "Europe Dév.": 0.97,
+      "Autres": 0.03
+    },
+    "EZU": {
+      "Europe Dév.": 0.97,
+      "Autres": 0.03
+    },
+    "ESE.PA": {
+      "Europe Dév.": 0.97,
+      "Autres": 0.03
+    },
+    "LYXEL.PA": {
+      "Europe Dév.": 0.97,
+      "Autres": 0.03
+    },
+    "MSEU.PA": {
+      "Europe Dév.": 0.97,
+      "Autres": 0.03
+    },
+    "MEUD.PA": {
+      "Europe Dév.": 0.97,
+      "Autres": 0.03
+    },
+    "SMEA.PA": {
+      "Europe Dév.": 0.97,
+      "Autres": 0.03
+    },
+    "IMEU.AS": {
+      "Europe Dév.": 0.97,
+      "Autres": 0.03
+    },
+    "IESE.AS": {
+      "Europe Dév.": 0.97,
+      "Autres": 0.03
+    },
+    "50E.PA": {
+      "Europe Dév.": 0.97,
+      "Autres": 0.03
+    },
+    "EEM": {
+      "Marchés Émergents": 0.88,
+      "Asie-Pacifique Dév.": 0.05,
+      "Europe Dév.": 0.03,
+      "Autres": 0.04
+    },
+    "VWO": {
+      "Marchés Émergents": 0.88,
+      "Asie-Pacifique Dév.": 0.05,
+      "Europe Dév.": 0.03,
+      "Autres": 0.04
+    },
+    "PAEEM.PA": {
+      "Marchés Émergents": 0.88,
+      "Asie-Pacifique Dév.": 0.05,
+      "Europe Dév.": 0.03,
+      "Autres": 0.04
+    },
+    "IS3N.DE": {
+      "Marchés Émergents": 0.88,
+      "Asie-Pacifique Dév.": 0.05,
+      "Europe Dév.": 0.03,
+      "Autres": 0.04
+    },
+    "VFEM.AS": {
+      "Marchés Émergents": 0.88,
+      "Asie-Pacifique Dév.": 0.05,
+      "Europe Dév.": 0.03,
+      "Autres": 0.04
+    },
+    "AEEM.PA": {
+      "Marchés Émergents": 0.88,
+      "Asie-Pacifique Dév.": 0.05,
+      "Europe Dév.": 0.03,
+      "Autres": 0.04
+    },
+    "PASI.PA": {
+      "Marchés Émergents": 0.97,
+      "Autres": 0.03
+    },
+    "WSML.AS": {
+      "Amérique du Nord": 0.6,
+      "Europe Dév.": 0.22,
+      "Asie-Pacifique Dév.": 0.15,
+      "Autres": 0.03
+    },
+    "IWM": {
+      "Amérique du Nord": 1.0
+    },
+    "EWJ": {
+      "Asie-Pacifique Dév.": 1.0
+    },
+    "XLK": {
+      "Amérique du Nord": 1.0
+    },
+    "XLF": {
+      "Amérique du Nord": 1.0
+    },
+    "XLV": {
+      "Amérique du Nord": 1.0
+    },
+    "XLE": {
+      "Amérique du Nord": 1.0
+    },
+    "XLY": {
+      "Amérique du Nord": 1.0
+    },
+    "XLP": {
+      "Amérique du Nord": 1.0
+    },
+    "XLI": {
+      "Amérique du Nord": 1.0
+    },
+    "XLU": {
+      "Amérique du Nord": 1.0
+    },
+    "XLB": {
+      "Amérique du Nord": 1.0
+    },
+    "XLRE": {
+      "Amérique du Nord": 1.0
+    },
+    "NUCL": {
+      "Amérique du Nord": 0.7,
+      "Asie Dév.": 0.15,
+      "Autre": 0.15
+    },
+    "GLD": {},
+    "IAU": {},
+    "SGOL": {},
+    "GDX": {},
+    "GDXJ": {},
+    "PHAU.AS": {},
+    "SGLD.AS": {},
+    "4GLD.DE": {},
+    "VZLD.DE": {},
+    "WGLD.PA": {},
+    "IBIT": {},
+    "FBTC": {},
+    "GBTC": {},
+    "ARKB": {},
+    "AGG": {
+      "Amérique du Nord": 1.0
+    },
+    "BND": {
+      "Amérique du Nord": 1.0
+    },
+    "TLT": {
+      "Amérique du Nord": 1.0
+    },
+    "IEF": {
+      "Amérique du Nord": 1.0
+    },
+    "SHY": {
+      "Amérique du Nord": 1.0
+    },
+    "HYG": {
+      "Amérique du Nord": 1.0
+    },
+    "LQD": {
+      "Amérique du Nord": 1.0
+    },
+    "IGOV": {
+      "Amérique du Nord": 0.35,
+      "Europe Dév.": 0.35,
+      "Asie-Pacifique Dév.": 0.2,
+      "Marchés Émergents": 0.05,
+      "Autres": 0.05
+    },
+    "EMB": {
+      "Marchés Émergents": 0.95,
+      "Autres": 0.05
+    },
+    "AGGH.AS": {
+      "Amérique du Nord": 0.4,
+      "Europe Dév.": 0.3,
+      "Asie-Pacifique Dév.": 0.2,
+      "Marchés Émergents": 0.05,
+      "Autres": 0.05
+    },
+    "IEAC.AS": {
+      "Europe Dév.": 0.95,
+      "Autres": 0.05
+    },
+    "IBCX.AS": {
+      "Europe Dév.": 1.0
+    },
+    "XGSG.DE": {
+      "Amérique du Nord": 0.35,
+      "Europe Dév.": 0.3,
+      "Asie-Pacifique Dév.": 0.25,
+      "Marchés Émergents": 0.05,
+      "Autres": 0.05
+    },
+    "VGEA.AS": {
+      "Europe Dév.": 1.0
+    },
+    "GIL0.DE": {
+      "Amérique du Nord": 0.35,
+      "Europe Dév.": 0.3,
+      "Asie-Pacifique Dév.": 0.25,
+      "Marchés Émergents": 0.05,
+      "Autres": 0.05
+    }
+  },
+  "asset_class": {
+    "SHY": "Obligations",
+    "VGK": "Action",
+    "IWRD.L": "Action",
+    "MWRD.PA": "Action",
+    "XLP": "Action",
+    "IVV": "Action",
+    "NASD.PA": "Action",
+    "WEBG.DE": "Action",
+    "VZLD.DE": "Or",
+    "IUSA.AS": "Action",
+    "XLV": "Action",
+    "XLE": "Action",
+    "IESE.AS": "Action",
+    "XLRE": "Action",
+    "WGLD.PA": "Or",
+    "ARKB": "Crypto",
+    "LCWD.PA": "Action",
+    "P500.PA": "Action",
+    "SGLD.AS": "Or",
+    "ESE.PA": "Action",
+    "ANX.PA": "Action",
+    "XDWD.DE": "Action",
+    "PUST.PA": "Action",
+    "4GLD.DE": "Or",
+    "IBIT": "Crypto",
+    "EWLD.PA": "Action",
+    "AEEM.PA": "Action",
+    "VOO": "Action",
+    "VFEM.AS": "Action",
+    "IWDA.AS": "Action",
+    "WPEA.PA": "Action",
+    "SP5.PA": "Action",
+    "TLT": "Obligations",
+    "GDXJ": "Or",
+    "PAEEM.PA": "Action",
+    "ACWI": "Action",
+    "LYXSP5.PA": "Action",
+    "SP500.PA": "Action",
+    "BND": "Obligations",
+    "VGEA.AS": "Obligations",
+    "XLI": "Action",
+    "MEUD.PA": "Action",
+    "PLEM.PA": "Action",
+    "GLD": "Or",
+    "PUST.DE": "Action",
+    "PHAU.AS": "Or",
+    "SCHB": "Action",
+    "VTV": "Action",
+    "AGGH.AS": "Obligations",
+    "HYG": "Obligations",
+    "XLB": "Action",
+    "NUCL": "Action",
+    "SSAC.AS": "Action",
+    "LQD": "Obligations",
+    "XLF": "Action",
+    "PANX.PA": "Action",
+    "HMWO.AS": "Action",
+    "50E.PA": "Action",
+    "XLK": "Action",
+    "FBTC": "Crypto",
+    "VUAA.AS": "Action",
+    "EIMI.AS": "Action",
+    "XGSG.DE": "Obligations",
+    "VUAA.PA": "Action",
+    "IEAC.AS": "Obligations",
+    "VTI": "Action",
+    "VWRL.AS": "Action",
+    "IXN": "Action",
+    "VT": "Action",
+    "SGOL": "Or",
+    "SWDA.AS": "Action",
+    "IMEU.AS": "Action",
+    "GBTC": "Crypto",
+    "IBCX.AS": "Obligations",
+    "SMEA.PA": "Action",
+    "WFIN": "Action",
+    "IEUR": "Action",
+    "CNDX.AS": "Action",
+    "IEF": "Obligations",
+    "VWO": "Action",
+    "XLU": "Action",
+    "IWM": "Action",
+    "SPY": "Action",
+    "MSEU.PA": "Action",
+    "VWCE.DE": "Action",
+    "CSPX.AS": "Action",
+    "IAU": "Or",
+    "GDX": "Or",
+    "CD8.PA": "Action",
+    "WSML.AS": "Action",
+    "AGG": "Obligations",
+    "QQQ": "Action",
+    "EZU": "Action",
+    "PASI.PA": "Action",
+    "GIL0.DE": "Obligations",
+    "EWJ": "Action",
+    "CW8.PA": "Action",
+    "LYXEL.PA": "Action",
+    "VUG": "Action",
+    "IGOV": "Obligations",
+    "URTH": "Action",
+    "IS3N.DE": "Action",
+    "EEM": "Action",
+    "EMB": "Obligations",
+    "IXJ": "Action",
+    "500.PA": "Action",
+    "PSP5.PA": "Action",
+    "SXR8.DE": "Action",
+    "XLY": "Action"
+  }
+}
