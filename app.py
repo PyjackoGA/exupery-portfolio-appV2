@@ -103,7 +103,28 @@ if _logo_b64:
         f'</div>',
         unsafe_allow_html=True,
     )
-
+st.markdown(
+    """
+    <div style="
+        margin: 0 0 1.2rem 0;
+        padding: 0.85rem 1rem;
+        border-radius: 14px;
+        background: rgba(255,255,255,0.18);
+        border: 1px solid rgba(255,255,255,0.30);
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+    ">
+        Vous débutez ? Alors accédez à nos tutos :
+        <a href="https://m.youtube.com/watch?v=8-MxAEOYrnM&ra=m" target="_blank"
+           style="color: #0d2848; font-weight: 800; text-decoration: underline;">
+           voir les vidéos
+        </a>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
 # ─── Sidebar ──────────────────────────────────────────────────────────────────
 with st.sidebar:
     st.header("Mon Portefeuille")
