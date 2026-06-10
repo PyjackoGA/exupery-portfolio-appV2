@@ -1247,8 +1247,6 @@ def _extend_etf_databases_with_aliases():
             ETF_GEO_DB[ticker] = dict(geo_profile)
 
 
-_extend_etf_databases_with_aliases()
-
 # ── Profils proxy géographiques ──────────────────────────────────────────────
 _PROFILE_GEO = {
     "WORLD": {"Amérique du Nord": 0.67, "Europe Dév.": 0.18, "Asie-Pacifique Dév.": 0.12, "Autres": 0.03},
@@ -1282,6 +1280,8 @@ _PROFILE_GEO = {
     "CRYPTO": {"Actif global": 1.0},
     "BONDS": {"Actif global": 1.0},
 }
+
+_extend_etf_databases_with_aliases()
 
 def _canonical_ticker_variants(ticker: str) -> list[str]:
     """
