@@ -670,6 +670,644 @@ _SPECIAL_ASSET_CLASSES: dict[str, str] = {
 }
 
 
+# ── Profils proxy sectoriels ────────────────────────────────────────────────
+_PROFILE_SECTORS = {
+    "WORLD": {
+        "Technologie": 0.26, "Finance": 0.15, "Industrie": 0.11, "Santé": 0.10,
+        "Conso. Cyclique": 0.10, "Communication": 0.09, "Conso. Défensive": 0.07,
+        "Énergie": 0.04, "Matériaux": 0.04, "Services Publics": 0.02, "Immobilier": 0.02,
+    },
+    "ACWI": {
+        "Technologie": 0.23, "Finance": 0.17, "Industrie": 0.11, "Conso. Cyclique": 0.11,
+        "Santé": 0.10, "Communication": 0.08, "Conso. Défensive": 0.07, "Énergie": 0.05,
+        "Matériaux": 0.04, "Services Publics": 0.02, "Immobilier": 0.02,
+    },
+    "SP500": {
+        "Technologie": 0.31, "Finance": 0.14, "Santé": 0.12, "Conso. Cyclique": 0.10,
+        "Communication": 0.09, "Industrie": 0.09, "Conso. Défensive": 0.06,
+        "Énergie": 0.04, "Matériaux": 0.03, "Services Publics": 0.01, "Immobilier": 0.01,
+    },
+    "NASDAQ100": {
+        "Technologie": 0.58, "Communication": 0.17, "Conso. Cyclique": 0.14,
+        "Santé": 0.06, "Industrie": 0.05,
+    },
+    "EUROPE": {
+        "Finance": 0.20, "Industrie": 0.16, "Santé": 0.14, "Conso. Cyclique": 0.12,
+        "Conso. Défensive": 0.11, "Matériaux": 0.07, "Énergie": 0.07,
+        "Technologie": 0.07, "Communication": 0.04, "Services Publics": 0.01, "Immobilier": 0.01,
+    },
+    "EM": {
+        "Technologie": 0.22, "Finance": 0.22, "Conso. Cyclique": 0.14, "Communication": 0.10,
+        "Matériaux": 0.08, "Énergie": 0.06, "Industrie": 0.06, "Santé": 0.04,
+        "Conso. Défensive": 0.05, "Services Publics": 0.02, "Immobilier": 0.01,
+    },
+    "JAPAN": {
+        "Industrie": 0.23, "Conso. Cyclique": 0.19, "Technologie": 0.15,
+        "Santé": 0.08, "Finance": 0.10, "Communication": 0.06,
+        "Conso. Défensive": 0.08, "Matériaux": 0.05, "Énergie": 0.03,
+        "Services Publics": 0.02, "Immobilier": 0.01,
+    },
+    "CHINA": {
+        "Conso. Cyclique": 0.28, "Communication": 0.20, "Finance": 0.17,
+        "Industrie": 0.06, "Conso. Défensive": 0.06, "Technologie": 0.06,
+        "Santé": 0.06, "Énergie": 0.04, "Matériaux": 0.03, "Immobilier": 0.02,
+        "Services Publics": 0.02,
+    },
+    "INDIA": {
+        "Finance": 0.26, "Technologie": 0.14, "Énergie": 0.12, "Industrie": 0.12,
+        "Conso. Cyclique": 0.11, "Matériaux": 0.08, "Santé": 0.06,
+        "Conso. Défensive": 0.05, "Communication": 0.03, "Services Publics": 0.02,
+        "Immobilier": 0.01,
+    },
+    "SMALL_CAP_US": {
+        "Technologie": 0.18, "Industrie": 0.18, "Finance": 0.16, "Santé": 0.12,
+        "Conso. Cyclique": 0.11, "Conso. Défensive": 0.04, "Communication": 0.03,
+        "Énergie": 0.05, "Matériaux": 0.05, "Services Publics": 0.03, "Immobilier": 0.05,
+    },
+    "MIN_VOL_WORLD": {
+        "Technologie": 0.18, "Santé": 0.14, "Conso. Défensive": 0.13, "Finance": 0.12,
+        "Industrie": 0.10, "Services Publics": 0.09, "Communication": 0.07,
+        "Conso. Cyclique": 0.07, "Énergie": 0.03, "Matériaux": 0.03, "Immobilier": 0.04,
+    },
+    "VALUE_WORLD": {
+        "Finance": 0.23, "Énergie": 0.10, "Matériaux": 0.08, "Industrie": 0.14,
+        "Santé": 0.10, "Conso. Cyclique": 0.10, "Conso. Défensive": 0.08,
+        "Technologie": 0.08, "Communication": 0.04, "Services Publics": 0.03, "Immobilier": 0.02,
+    },
+    "MOMENTUM_WORLD": {
+        "Technologie": 0.30, "Communication": 0.11, "Finance": 0.12, "Industrie": 0.11,
+        "Conso. Cyclique": 0.11, "Santé": 0.09, "Conso. Défensive": 0.05,
+        "Énergie": 0.03, "Matériaux": 0.03, "Services Publics": 0.02, "Immobilier": 0.03,
+    },
+    "QUALITY_WORLD": {
+        "Technologie": 0.24, "Santé": 0.15, "Finance": 0.13, "Industrie": 0.11,
+        "Conso. Défensive": 0.10, "Communication": 0.08, "Conso. Cyclique": 0.08,
+        "Énergie": 0.03, "Matériaux": 0.03, "Services Publics": 0.03, "Immobilier": 0.02,
+    },
+
+    # Sectoriels purs
+    "TECH": {"Technologie": 1.0},
+    "FINANCE": {"Finance": 1.0},
+    "HEALTH": {"Santé": 1.0},
+    "ENERGY": {"Énergie": 1.0},
+    "INDUSTRIALS": {"Industrie": 1.0},
+    "CONS_DISC": {"Conso. Cyclique": 1.0},
+    "CONS_STAP": {"Conso. Défensive": 1.0},
+    "UTILITIES": {"Services Publics": 1.0},
+    "MATERIALS": {"Matériaux": 1.0},
+    "REAL_ESTATE": {"Immobilier": 1.0},
+    "COMM": {"Communication": 1.0},
+
+    # Matières / or / crypto / bonds
+    "GOLD": {"Or": 1.0},
+    "CRYPTO": {"Crypto": 1.0},
+    "BONDS": {"Obligations": 1.0},
+}
+
+# ── Alias massifs -> profils proxy ───────────────────────────────────────────
+# Objectif : couvrir une très grande partie des ETF "mainstream" qu’on retrouve
+# dans les guides / catégories justETF, sans dupliquer 500 fois les mêmes poids.
+
+JUSTETF_ALIAS_TO_PROFILE = {
+    # ════════════════════════════════════════════════════════════════════════
+    # WORLD / DEVELOPED WORLD
+    # ════════════════════════════════════════════════════════════════════════
+    "CW8.PA": "WORLD",
+    "EWLD.PA": "WORLD",
+    "WPEA.PA": "WORLD",
+    "PLEM.PA": "WORLD",
+    "LCWD.PA": "WORLD",
+    "MWRD.PA": "WORLD",
+    "IWRD.L": "WORLD",
+    "URTH": "WORLD",
+    "IWDA.AS": "WORLD",
+    "SWDA.AS": "WORLD",
+    "XDWD.DE": "WORLD",
+    "HMWO.AS": "WORLD",
+    "SWRD.AS": "WORLD",
+    "EUNL.DE": "WORLD",
+    "SSWO.DE": "WORLD",
+    "XDWL.DE": "WORLD",
+    "WRD.PA": "WORLD",
+    "IQQW.DE": "WORLD",
+    "LYPW.PA": "WORLD",
+    "XMWO.DE": "WORLD",
+    "PRAW.PA": "WORLD",
+    "WLD.PA": "WORLD",
+    "XDEV.DE": "WORLD",
+
+    # ════════════════════════════════════════════════════════════════════════
+    # ACWI / ALL-WORLD / GLOBAL ALL CAP
+    # ════════════════════════════════════════════════════════════════════════
+    "ACWI": "ACWI",
+    "VT": "ACWI",
+    "IUSQ.AS": "ACWI",
+    "IUSQ.DE": "ACWI",
+    "IUSQ": "ACWI",
+    "ISAC.AS": "ACWI",
+    "ISAC.L": "ACWI",
+    "ISAC": "ACWI",
+    "SSAC.AS": "ACWI",
+    "SSAC": "ACWI",
+    "VWRL.AS": "ACWI",
+    "VWRL.L": "ACWI",
+    "VWCE.DE": "ACWI",
+    "VWCE": "ACWI",
+    "VWRA.L": "ACWI",
+    "VWRP.L": "ACWI",
+    "FWRA.DE": "ACWI",
+    "WEBG.DE": "ACWI",
+    "ALLW.L": "ACWI",
+    "GLBL.L": "ACWI",
+    "XMAW.DE": "ACWI",
+
+    # ════════════════════════════════════════════════════════════════════════
+    # USA / S&P 500
+    # ════════════════════════════════════════════════════════════════════════
+    "SPY": "SP500",
+    "IVV": "SP500",
+    "VOO": "SP500",
+    "VTI": "SP500",
+    "CSPX.AS": "SP500",
+    "CSPX.L": "SP500",
+    "SXR8.DE": "SP500",
+    "VUAA.PA": "SP500",
+    "VUAA.AS": "SP500",
+    "IUSA.AS": "SP500",
+    "P500.PA": "SP500",
+    "PSP5.PA": "SP500",
+    "CD8.PA": "SP500",
+    "500.PA": "SP500",
+    "PUST.PA": "SP500",
+    "SP5.PA": "SP500",
+    "SP500.PA": "SP500",
+    "LYXSP5.PA": "SP500",
+    "VUSA.AS": "SP500",
+    "VUSA.L": "SP500",
+    "SPYL.DE": "SP500",
+    "SPXP.DE": "SP500",
+    "CSSPX.L": "SP500",
+    "SPPW.L": "SP500",
+    "SP5L.L": "SP500",
+    "G500.L": "SP500",
+    "XSPX.DE": "SP500",
+
+    # ════════════════════════════════════════════════════════════════════════
+    # NASDAQ 100
+    # ════════════════════════════════════════════════════════════════════════
+    "QQQ": "NASDAQ100",
+    "ANX.PA": "NASDAQ100",
+    "PANX.PA": "NASDAQ100",
+    "CNDX.AS": "NASDAQ100",
+    "NASD.PA": "NASDAQ100",
+    "PUST.DE": "NASDAQ100",
+    "EQQQ.L": "NASDAQ100",
+    "SXRV.DE": "NASDAQ100",
+    "CSNDX.L": "NASDAQ100",
+    "CNX1.L": "NASDAQ100",
+    "QQQM": "NASDAQ100",
+    "QQQM": "NASDAQ100",
+    "USTQ.L": "NASDAQ100",
+
+    # ════════════════════════════════════════════════════════════════════════
+    # EUROPE / EUROZONE
+    # ════════════════════════════════════════════════════════════════════════
+    "VGK": "EUROPE",
+    "IEUR": "EUROPE",
+    "EZU": "EUROPE",
+    "ESE.PA": "EUROPE",
+    "LYXEL.PA": "EUROPE",
+    "MSEU.PA": "EUROPE",
+    "MEUD.PA": "EUROPE",
+    "SMEA.PA": "EUROPE",
+    "IMEU.AS": "EUROPE",
+    "IESE.AS": "EUROPE",
+    "50E.PA": "EUROPE",
+    "EXSA.DE": "EUROPE",
+    "MEUD.AS": "EUROPE",
+    "IMEU.DE": "EUROPE",
+    "FEZ": "EUROPE",
+    "ESTX50.L": "EUROPE",
+    "XXSC.DE": "EUROPE",
+    "EUNK.DE": "EUROPE",
+    "HEDJ": "EUROPE",
+
+    # ════════════════════════════════════════════════════════════════════════
+    # EMERGING MARKETS
+    # ════════════════════════════════════════════════════════════════════════
+    "EEM": "EM",
+    "VWO": "EM",
+    "PAEEM.PA": "EM",
+    "IS3N.DE": "EM",
+    "VFEM.AS": "EM",
+    "AEEM.PA": "EM",
+    "EIMI.AS": "EM",
+    "EMIM.AS": "EM",
+    "IEMA.AS": "EM",
+    "SCHE": "EM",
+    "IEMG": "EM",
+    "SPEM": "EM",
+    "EUNM.DE": "EM",
+    "XCEM.L": "EM",
+    "EMXC": "EM",
+    "XMME.DE": "EM",
+    "FRDM": "EM",
+    "EEMS": "EM",
+
+    # ════════════════════════════════════════════════════════════════════════
+    # JAPAN
+    # ════════════════════════════════════════════════════════════════════════
+    "EWJ": "JAPAN",
+    "DXJ": "JAPAN",
+    "JPXN": "JAPAN",
+    "HEWJ": "JAPAN",
+    "CSJP.AS": "JAPAN",
+    "XJPN.DE": "JAPAN",
+    "SJPA.L": "JAPAN",
+    "JPGL.L": "JAPAN",
+
+    # ════════════════════════════════════════════════════════════════════════
+    # CHINA
+    # ════════════════════════════════════════════════════════════════════════
+    "FXI": "CHINA",
+    "MCHI": "CHINA",
+    "KWEB": "CHINA",
+    "ASHR": "CHINA",
+    "PGJ": "CHINA",
+    "CQQQ": "CHINA",
+    "GXC": "CHINA",
+    "CNXT": "CHINA",
+    "XCHA.DE": "CHINA",
+    "HMCH.L": "CHINA",
+    "XCS6.DE": "CHINA",
+
+    # ════════════════════════════════════════════════════════════════════════
+    # INDIA
+    # ════════════════════════════════════════════════════════════════════════
+    "INDA": "INDIA",
+    "SMIN": "INDIA",
+    "EPI": "INDIA",
+    "PIN": "INDIA",
+    "NDIA.L": "INDIA",
+    "CI2.DE": "INDIA",
+    "AASI.PA": "INDIA",
+    "AIND.PA": "INDIA",
+
+    # ════════════════════════════════════════════════════════════════════════
+    # USA SMALL CAP / STYLE
+    # ════════════════════════════════════════════════════════════════════════
+    "IWM": "SMALL_CAP_US",
+    "IJR": "SMALL_CAP_US",
+    "VB": "SMALL_CAP_US",
+    "VTWO": "SMALL_CAP_US",
+    "VBR": "SMALL_CAP_US",
+    "VBK": "SMALL_CAP_US",
+    "IJS": "SMALL_CAP_US",
+    "IJT": "SMALL_CAP_US",
+
+    # ════════════════════════════════════════════════════════════════════════
+    # VALUE / MOMENTUM / QUALITY / MIN VOL
+    # ════════════════════════════════════════════════════════════════════════
+    "IWF": "QUALITY_WORLD",
+    "IWD": "VALUE_WORLD",
+    "VUG": "QUALITY_WORLD",
+    "VTV": "VALUE_WORLD",
+    "QUAL": "QUALITY_WORLD",
+    "IWQU.L": "QUALITY_WORLD",
+    "QDV5.DE": "QUALITY_WORLD",
+    "SPHQ": "QUALITY_WORLD",
+    "MTUM": "MOMENTUM_WORLD",
+    "IWMO.L": "MOMENTUM_WORLD",
+    "XDEM.L": "MOMENTUM_WORLD",
+    "USMV": "MIN_VOL_WORLD",
+    "SPLV": "MIN_VOL_WORLD",
+    "MVOL.L": "MIN_VOL_WORLD",
+    "VLUE": "VALUE_WORLD",
+    "IUSV": "VALUE_WORLD",
+    "IUSG": "QUALITY_WORLD",
+    "DGRW": "QUALITY_WORLD",
+    "NOBL": "QUALITY_WORLD",
+    "SCHD": "VALUE_WORLD",
+    "DGRO": "QUALITY_WORLD",
+    "FUSD.L": "QUALITY_WORLD",
+    "VHYL.L": "VALUE_WORLD",
+    "VYMI": "VALUE_WORLD",
+    "IDV": "VALUE_WORLD",
+
+    # ════════════════════════════════════════════════════════════════════════
+    # SECTEURS — TECH
+    # ════════════════════════════════════════════════════════════════════════
+    "XLK": "TECH",
+    "IXN": "TECH",
+    "VGT": "TECH",
+    "IYW": "TECH",
+    "SOXX": "TECH",
+    "SMH": "TECH",
+    "FTEC": "TECH",
+    "IGM": "TECH",
+    "XSD": "TECH",
+    "WCLD": "TECH",
+    "SKYY": "TECH",
+    "CLOU": "TECH",
+    "HACK": "TECH",
+    "CIBR": "TECH",
+    "BUG": "TECH",
+    "BOTZ": "TECH",
+    "ROBO": "TECH",
+    "AIQ": "TECH",
+    "IRBO": "TECH",
+    "ARKK": "TECH",
+    "ARKW": "TECH",
+    "ARKQ": "TECH",
+    "QTUM": "TECH",
+    "IUIT.L": "TECH",
+    "ESPO": "TECH",
+    "NERD": "TECH",
+    "TDIV": "TECH",
+    "FIVG": "TECH",
+
+    # ════════════════════════════════════════════════════════════════════════
+    # SECTEURS — HEALTHCARE
+    # ════════════════════════════════════════════════════════════════════════
+    "XLV": "HEALTH",
+    "IXJ": "HEALTH",
+    "VHT": "HEALTH",
+    "IYH": "HEALTH",
+    "FHLC": "HEALTH",
+    "IBB": "HEALTH",
+    "XBI": "HEALTH",
+    "PPH": "HEALTH",
+    "IHE": "HEALTH",
+    "IHI": "HEALTH",
+    "ARKG": "HEALTH",
+    "GNOM": "HEALTH",
+    "SBIO": "HEALTH",
+    "PBE": "HEALTH",
+
+    # ════════════════════════════════════════════════════════════════════════
+    # SECTEURS — FINANCE
+    # ════════════════════════════════════════════════════════════════════════
+    "XLF": "FINANCE",
+    "WFIN": "FINANCE",
+    "VFH": "FINANCE",
+    "IYF": "FINANCE",
+    "FNCL": "FINANCE",
+    "KRE": "FINANCE",
+    "KBE": "FINANCE",
+    "IAI": "FINANCE",
+    "EUFN": "FINANCE",
+    "IXG": "FINANCE",
+    "IPAY": "FINANCE",
+    "ARKF": "FINANCE",
+
+    # ════════════════════════════════════════════════════════════════════════
+    # SECTEURS — ENERGY
+    # ════════════════════════════════════════════════════════════════════════
+    "XLE": "ENERGY",
+    "NUCL": "ENERGY",
+    "VDE": "ENERGY",
+    "IYE": "ENERGY",
+    "FENY": "ENERGY",
+    "IXC": "ENERGY",
+    "OIH": "ENERGY",
+    "XOP": "ENERGY",
+    "PBW": "ENERGY",
+    "QCLN": "ENERGY",
+    "ICLN": "ENERGY",
+    "INRG.L": "ENERGY",
+    "TAN": "ENERGY",
+    "FAN": "ENERGY",
+
+    # ════════════════════════════════════════════════════════════════════════
+    # SECTEURS — INDUSTRIALS
+    # ════════════════════════════════════════════════════════════════════════
+    "XLI": "INDUSTRIALS",
+    "VIS": "INDUSTRIALS",
+    "IYJ": "INDUSTRIALS",
+    "FIDU": "INDUSTRIALS",
+    "ITA": "INDUSTRIALS",
+    "PAVE": "INDUSTRIALS",
+    "RGI": "INDUSTRIALS",
+    "AIRR": "INDUSTRIALS",
+    "IFRA": "INDUSTRIALS",
+    "JETS": "INDUSTRIALS",
+    "XTN": "INDUSTRIALS",
+    "IYT": "INDUSTRIALS",
+
+    # ════════════════════════════════════════════════════════════════════════
+    # SECTEURS — CONSUMER DISCRETIONARY
+    # ════════════════════════════════════════════════════════════════════════
+    "XLY": "CONS_DISC",
+    "VCR": "CONS_DISC",
+    "RTH": "CONS_DISC",
+    "PEJ": "CONS_DISC",
+    "FXD": "CONS_DISC",
+    "IBUY": "CONS_DISC",
+    "ONLN": "CONS_DISC",
+    "AWAY": "CONS_DISC",
+    "CARZ": "CONS_DISC",
+    "DRIV": "CONS_DISC",
+
+    # ════════════════════════════════════════════════════════════════════════
+    # SECTEURS — CONSUMER STAPLES
+    # ════════════════════════════════════════════════════════════════════════
+    "XLP": "CONS_STAP",
+    "VDC": "CONS_STAP",
+    "IYK": "CONS_STAP",
+    "FSTA": "CONS_STAP",
+    "KXI": "CONS_STAP",
+    "PBJ": "CONS_STAP",
+    "MOO": "CONS_STAP",
+    "VEGI": "CONS_STAP",
+
+    # ════════════════════════════════════════════════════════════════════════
+    # SECTEURS — UTILITIES
+    # ════════════════════════════════════════════════════════════════════════
+    "XLU": "UTILITIES",
+    "VPU": "UTILITIES",
+    "IDU": "UTILITIES",
+    "FUTY": "UTILITIES",
+    "JXI": "UTILITIES",
+    "RYU": "UTILITIES",
+    "FIW": "UTILITIES",
+    "PHO": "UTILITIES",
+    "CGW": "UTILITIES",
+
+    # ════════════════════════════════════════════════════════════════════════
+    # SECTEURS — MATERIALS
+    # ════════════════════════════════════════════════════════════════════════
+    "XLB": "MATERIALS",
+    "VAW": "MATERIALS",
+    "IYM": "MATERIALS",
+    "FMAT": "MATERIALS",
+    "MXI": "MATERIALS",
+    "PICK": "MATERIALS",
+    "XME": "MATERIALS",
+    "COPX": "MATERIALS",
+    "SIL": "MATERIALS",
+    "SLVP": "MATERIALS",
+    "URA": "MATERIALS",
+    "URNM": "MATERIALS",
+    "LIT": "MATERIALS",
+    "BATT": "MATERIALS",
+    "WOOD": "MATERIALS",
+
+    # ════════════════════════════════════════════════════════════════════════
+    # SECTEURS — REAL ESTATE
+    # ════════════════════════════════════════════════════════════════════════
+    "XLRE": "REAL_ESTATE",
+    "VNQ": "REAL_ESTATE",
+    "IYR": "REAL_ESTATE",
+    "REET": "REAL_ESTATE",
+    "SCHH": "REAL_ESTATE",
+    "USRT": "REAL_ESTATE",
+    "RWR": "REAL_ESTATE",
+    "IFGL": "REAL_ESTATE",
+    "VNQI": "REAL_ESTATE",
+    "SRVR": "REAL_ESTATE",
+    "INDS": "REAL_ESTATE",
+
+    # ════════════════════════════════════════════════════════════════════════
+    # SECTEURS — COMMUNICATION
+    # ════════════════════════════════════════════════════════════════════════
+    "XLC": "COMM",
+    "VOX": "COMM",
+    "IYZ": "COMM",
+    "FCOM": "COMM",
+    "IXP": "COMM",
+    "SOCL": "COMM",
+    "FDN": "COMM",
+    "PNQI": "COMM",
+    "XWEB": "COMM",
+    "EMQQ": "COMM",
+    "GAMR": "COMM",
+    "HERO": "COMM",
+
+    # ════════════════════════════════════════════════════════════════════════
+    # GOLD / PRECIOUS METALS
+    # ════════════════════════════════════════════════════════════════════════
+    "GLD": "GOLD",
+    "IAU": "GOLD",
+    "SGOL": "GOLD",
+    "GDX": "GOLD",
+    "GDXJ": "GOLD",
+    "PHAU.AS": "GOLD",
+    "SGLD.AS": "GOLD",
+    "4GLD.DE": "GOLD",
+    "VZLD.DE": "GOLD",
+    "WGLD.PA": "GOLD",
+
+    # ════════════════════════════════════════════════════════════════════════
+    # CRYPTO ETFs / ETNs
+    # ════════════════════════════════════════════════════════════════════════
+    "IBIT": "CRYPTO",
+    "FBTC": "CRYPTO",
+    "GBTC": "CRYPTO",
+    "ARKB": "CRYPTO",
+    "BITC.L": "CRYPTO",
+    "BTCE.DE": "CRYPTO",
+    "VBTC.DE": "CRYPTO",
+
+    # ════════════════════════════════════════════════════════════════════════
+    # BONDS
+    # ════════════════════════════════════════════════════════════════════════
+    "AGG": "BONDS",
+    "BND": "BONDS",
+    "TLT": "BONDS",
+    "IEF": "BONDS",
+    "SHY": "BONDS",
+    "HYG": "BONDS",
+    "LQD": "BONDS",
+    "IGOV": "BONDS",
+    "EMB": "BONDS",
+    "AGGH.AS": "BONDS",
+    "IEAC.AS": "BONDS",
+    "IBCX.AS": "BONDS",
+    "XGSG.DE": "BONDS",
+    "VGEA.AS": "BONDS",
+    "GIL0.DE": "BONDS",
+    "VAGF.AS": "BONDS",
+    "EUNA.DE": "BONDS",
+    "BNDW": "BONDS",
+}
+
+def _extend_etf_databases_with_aliases():
+    """
+    Injecte massivement des alias ETF dans ETF_SECTOR_DB / ETF_GEO_DB
+    à partir des profils proxy ci-dessus.
+    """
+    for ticker, profile in JUSTETF_ALIAS_TO_PROFILE.items():
+        sector_profile = _PROFILE_SECTORS.get(profile)
+        geo_profile = _PROFILE_GEO.get(profile)
+
+        if sector_profile is not None and ticker not in ETF_SECTOR_DB:
+            ETF_SECTOR_DB[ticker] = dict(sector_profile)
+
+        if geo_profile is not None and ticker not in ETF_GEO_DB:
+            ETF_GEO_DB[ticker] = dict(geo_profile)
+
+
+_extend_etf_databases_with_aliases()
+
+# ── Profils proxy géographiques ──────────────────────────────────────────────
+_PROFILE_GEO = {
+    "WORLD": {"Amérique du Nord": 0.67, "Europe Dév.": 0.18, "Asie-Pacifique Dév.": 0.12, "Autres": 0.03},
+    "ACWI": {"Amérique du Nord": 0.62, "Europe Dév.": 0.17, "Asie-Pacifique Dév.": 0.10, "Marchés Émergents": 0.09, "Autres": 0.02},
+    "SP500": {"Amérique du Nord": 1.0},
+    "NASDAQ100": {"Amérique du Nord": 1.0},
+    "EUROPE": {"Europe Dév.": 1.0},
+    "EM": {"Marchés Émergents": 1.0},
+    "JAPAN": {"Asie-Pacifique Dév.": 1.0},
+    "CHINA": {"Marchés Émergents": 1.0},
+    "INDIA": {"Marchés Émergents": 1.0},
+    "SMALL_CAP_US": {"Amérique du Nord": 1.0},
+    "MIN_VOL_WORLD": {"Amérique du Nord": 0.62, "Europe Dév.": 0.20, "Asie-Pacifique Dév.": 0.12, "Autres": 0.06},
+    "VALUE_WORLD": {"Amérique du Nord": 0.58, "Europe Dév.": 0.21, "Asie-Pacifique Dév.": 0.11, "Marchés Émergents": 0.07, "Autres": 0.03},
+    "MOMENTUM_WORLD": {"Amérique du Nord": 0.70, "Europe Dév.": 0.14, "Asie-Pacifique Dév.": 0.09, "Marchés Émergents": 0.05, "Autres": 0.02},
+    "QUALITY_WORLD": {"Amérique du Nord": 0.68, "Europe Dév.": 0.15, "Asie-Pacifique Dév.": 0.10, "Marchés Émergents": 0.05, "Autres": 0.02},
+
+    "TECH": {"Amérique du Nord": 1.0},
+    "FINANCE": {"Amérique du Nord": 1.0},
+    "HEALTH": {"Amérique du Nord": 1.0},
+    "ENERGY": {"Amérique du Nord": 1.0},
+    "INDUSTRIALS": {"Amérique du Nord": 1.0},
+    "CONS_DISC": {"Amérique du Nord": 1.0},
+    "CONS_STAP": {"Amérique du Nord": 1.0},
+    "UTILITIES": {"Amérique du Nord": 1.0},
+    "MATERIALS": {"Amérique du Nord": 1.0},
+    "REAL_ESTATE": {"Amérique du Nord": 1.0},
+    "COMM": {"Amérique du Nord": 1.0},
+
+    "GOLD": {"Actif global": 1.0},
+    "CRYPTO": {"Actif global": 1.0},
+    "BONDS": {"Actif global": 1.0},
+}
+
+def _canonical_ticker_variants(ticker: str) -> list[str]:
+    """
+    Génère plusieurs variantes pour améliorer la reconnaissance :
+    - original
+    - upper
+    - sans suffixe de place
+    """
+    t = (ticker or "").strip()
+    up = t.upper()
+
+    variants = [t, up]
+
+    if "." in up:
+        root = up.split(".", 1)[0]
+        variants.extend([root])
+
+    # dédoublonnage en gardant l'ordre
+    seen = set()
+    out = []
+    for x in variants:
+        if x and x not in seen:
+            out.append(x)
+            seen.add(x)
+    return out
+
 @st.cache_data(ttl=3600)
 def fetch_ticker_info(ticker: str) -> dict:
     """
@@ -708,11 +1346,20 @@ def fetch_ticker_info(ticker: str) -> dict:
         _etf_params = load_etf_params()
 
         # Force ETF classification pour les tickers connus dans notre base.
-        _is_known_etf = bool(
-            _etf_params["sectors"].get(ticker.upper()) or _etf_params["sectors"].get(ticker)
-            or _etf_params["geo"].get(ticker.upper()) or _etf_params["geo"].get(ticker)
-        )
+        _variants = _canonical_ticker_variants(ticker)
 
+        def _first_match(d: dict, variants: list[str]):
+            for v in variants:
+                if v in d:
+                    return d[v]
+            return None
+    
+        _is_known_etf = any(
+            (_etf_params["sectors"].get(v) is not None) or (_etf_params["geo"].get(v) is not None)
+            for v in _variants
+        )
+        _sector_fallback = _first_match(_etf_params["sectors"], _variants)
+        _geo_fallback = _first_match(_etf_params["geo"], _variants)
         # Heuristique ETF : détecte les ETFs que yfinance classifie comme "EQUITY"
         # (fréquent pour les ETFs européens Euronext/XETRA).
         # Signaux fiables : fundFamily et totalAssets sont absents des actions ordinaires.
@@ -744,19 +1391,11 @@ def fetch_ticker_info(ticker: str) -> dict:
             base["country"] = "Global"
             base["region"] = "Global"
 
-            sector_from_db = (
-                _etf_params["sectors"].get(ticker.upper())
-                or _etf_params["sectors"].get(ticker)
-            )
-            geo_from_db = (
-                _etf_params["geo"].get(ticker.upper())
-                or _etf_params["geo"].get(ticker)
-            )
+            if _sector_fallback is not None:
+                base["sector_weights"] = _sector_fallback
 
-            if sector_from_db:
-                base["sector_weights"] = sector_from_db
-            if geo_from_db:
-                base["geo_weights"] = geo_from_db
+            if _geo_fallback is not None:
+                base["geo_weights"] = _geo_fallback
 
             if base["sector_weights"] is not None or base["geo_weights"] is not None:
                 base["data_source"] = "etf_db"
@@ -764,10 +1403,11 @@ def fetch_ticker_info(ticker: str) -> dict:
                 base["data_source"] = "etf_inconnu"
 
             # Classe d'actif depuis la base, avec fallback via _derive_asset_class
+            asset_class_from_db = _first_match(_etf_params["asset_class"], _variants)
+
             base["asset_class"] = (
-                _etf_params["asset_class"].get(ticker.upper())
-                or _etf_params["asset_class"].get(ticker)
-                or _derive_asset_class(sector_from_db)
+                asset_class_from_db
+                or _derive_asset_class(_sector_fallback)
             )
 
             if base["geo_weights"] is not None:
