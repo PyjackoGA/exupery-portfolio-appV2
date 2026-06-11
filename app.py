@@ -131,8 +131,8 @@ st.markdown(
 import os
 
 _BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-_ETF_LIST_PDF = os.path.join(_BASE_DIR, "liste_etf_supportes.pdf")
-_PRODUCT_PDF = os.path.join(_BASE_DIR, "presentation_exupery.pdf")
+_ETF_LIST_PDF = os.path.join(_BASE_DIR, "liste_etf_supportés.pdf")
+_PRODUCT_PDF = os.path.join(_BASE_DIR, "guide_exupery.pdf")
 
 st.markdown(
     """
