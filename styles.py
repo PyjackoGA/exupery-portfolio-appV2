@@ -449,8 +449,36 @@ div[data-testid="stAlert"][data-baseweb="notification"][kind="error"] {
     border-radius: 18px !important;
     padding: 0.5rem !important;
 }
-"""
+/* ── Icônes d'action (corbeille, +, -, etc.) ───────────────────────────── */
+button svg {
+    fill: #0d2848 !important;
+    color: #0d2848 !important;
+}
 
+[data-testid="stDataEditor"] button svg,
+[data-testid="stDataEditor"] [role="button"] svg,
+[data-testid="stPopover"] button svg {
+    fill: #0d2848 !important;
+    color: #0d2848 !important;
+}
+
+/* Hover pour meilleure visibilité */
+[data-testid="stDataEditor"] button:hover svg,
+[data-testid="stDataEditor"] [role="button"]:hover svg {
+    fill: #1e4480 !important;
+    color: #1e4480 !important;
+}
+/* Fallback icônes blanches sur blanc */
+button,
+[role="button"] {
+    color: #0d2848 !important;
+}
+
+button span,
+[role="button"] span {
+    color: #0d2848 !important;
+}
+"""
 
 def inject_glass_css() -> None:
     """Inject the full glassmorphism CSS into the running Streamlit app."""
