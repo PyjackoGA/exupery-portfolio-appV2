@@ -189,7 +189,8 @@ def _render(fig, px_w: int, px_h: int):
     """Génère un BytesIO PNG (scale=2 pour résolution print)."""
     try:
         return io.BytesIO(fig.to_image(format="png", width=px_w, height=px_h, scale=2))
-    except Exception:
+    except Exception as e:
+        print(f"[PDF_RENDER_ERROR] {e}")
         return None
 
 
