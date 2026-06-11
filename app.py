@@ -103,25 +103,8 @@ if _logo_b64:
         f'</div>',
         unsafe_allow_html=True,
     )
-st.markdown(
-    """
-    <div style="
-        margin: 0 0 1rem 0;
-        padding: 0.9rem 1rem;
-        border-radius: 14px;
-        background: #0d2848;
-        border: 1px solid rgba(255,255,255,0.18);
-        text-align: center;
-        color: white;
-        font-size: 15px;
-        font-weight: 700;
-        box-shadow: 0 4px 16px rgba(13,40,72,0.18);
-    ">
-        Besoin d'aide rapide ? Téléchargez nos documents ci-dessous.
-    </div>
-    """,
-    unsafe_allow_html=True,
-)
+
+
 # ─── PDF qui s'affichent ─────────────────────────────────────────────
 
 import os
