@@ -125,6 +125,55 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+import os
+
+# ─── PDF ressources ───────────────────────────────────────────────────────────
+_ASSETS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets")
+_ETF_LIST_PDF = os.path.join(_ASSETS_DIR, "liste_etf_supportes.pdf")
+_PRODUCT_PDF = os.path.join(_ASSETS_DIR, "presentation_exupery.pdf")
+
+st.markdown(
+    """
+    <div style="
+        margin: 0 0 1rem 0;
+        padding: 0.9rem 1rem;
+        border-radius: 14px;
+        background: rgba(255,255,255,0.18);
+        border: 1px solid rgba(255,255,255,0.30);
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+    ">
+        Besoin d'aide rapide ? Téléchargez nos documents ci-dessous.
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
+col_pdf1, col_pdf2 = st.columns(2)
+
+with col_pdf1:
+    if os.path.exists(_ETF_LIST_PDF):
+        with open(_ETF_LIST_PDF, "rb") as f:
+            st.download_button(
+                "📄 Liste des ETF pris en charge",
+                data=f.read(),
+                file_name="liste_etf_supportés.pdf",
+                mime="application/pdf",
+                use_container_width=True,
+            )
+
+with col_pdf2:
+    if os.path.exists(_PRODUCT_PDF):
+        with open(_PRODUCT_PDF, "rb") as f:
+            st.download_button(
+                "📘 Présentation du produit",
+                data=f.read(),
+                file_name="guide_exupery.pdf",
+                mime="application/pdf",
+                use_container_width=True,
+            )
 # ─── Sidebar ──────────────────────────────────────────────────────────────────
 with st.sidebar:
     st.header("Mon Portefeuille")
