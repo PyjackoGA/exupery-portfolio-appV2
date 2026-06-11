@@ -105,26 +105,51 @@ if _logo_b64:
     )
 
 
-# ─── PDF qui s'affichent ─────────────────────────────────────────────
-
 import os
 
 _BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-_ETF_LIST_PDF = os.path.join(_BASE_DIR, "liste_etf_supportés.pdf")
-_PRODUCT_PDF = os.path.join(_BASE_DIR, "guide_exupery.pdf")
+_ETF_LIST_PDF = os.path.join(_BASE_DIR, "liste_etf_supportes.pdf")
+_PRODUCT_PDF = os.path.join(_BASE_DIR, "presentation_exupery.pdf")
 
+# ── Bandeau tuto YouTube ─────────────────────────────────────────────────────
 st.markdown(
     """
     <div style="
-        margin: 0 0 1rem 0;
+        margin: 0 0 0.8rem 0;
         padding: 0.9rem 1rem;
         border-radius: 14px;
-        background: rgba(255,255,255,0.18);
-        border: 1px solid rgba(255,255,255,0.30);
+        background: #0d2848;
+        border: 1px solid rgba(255,255,255,0.18);
         text-align: center;
         color: white;
         font-size: 15px;
-        font-weight: 600;
+        font-weight: 700;
+        box-shadow: 0 4px 16px rgba(13,40,72,0.18);
+    ">
+        Vous débutez ? Alors accédez à nos tutos :
+        <a href="https://www.youtube.com/watch?v=8-MxAEOYrnM&t=452s" target="_blank"
+           style="color: #8eb2e5; font-weight: 800; text-decoration: underline;">
+           voir les vidéos
+        </a>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
+# ── Bandeau PDF ───────────────────────────────────────────────────────────────
+st.markdown(
+    """
+    <div style="
+        margin: 0 0 0.6rem 0;
+        padding: 0.9rem 1rem;
+        border-radius: 14px;
+        background: #0d2848;
+        border: 1px solid rgba(255,255,255,0.18);
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        font-weight: 700;
+        box-shadow: 0 4px 16px rgba(13,40,72,0.18);
     ">
         Besoin d'aide rapide ? Téléchargez nos documents ci-dessous.
     </div>
@@ -143,6 +168,7 @@ with col_pdf1:
                 file_name="liste_etf_supportés.pdf",
                 mime="application/pdf",
                 use_container_width=True,
+                key="pdf_etf_list_top",
             )
 
 with col_pdf2:
@@ -154,6 +180,7 @@ with col_pdf2:
                 file_name="guide_exupery.pdf",
                 mime="application/pdf",
                 use_container_width=True,
+                key="pdf_product_top",
             )
 # ─── Sidebar ──────────────────────────────────────────────────────────────────
 with st.sidebar:
