@@ -187,11 +187,9 @@ def _perf_fig(port_series, bench_series, title: str, bench_name: str):
 
 def _render(fig, px_w: int, px_h: int):
     """Génère un BytesIO PNG (scale=2 pour résolution print)."""
-    try:
-        return io.BytesIO(fig.to_image(format="png", width=px_w, height=px_h, scale=2))
-    except Exception as e:
-        print(f"[PDF_RENDER_ERROR] {e}")
-        return None
+    return io.BytesIO(
+        fig.to_image(format="png", width=px_w, height=px_h, scale=2)
+    )
 
 
 def _img_h_mm(px_w: int, px_h: int, mm_w: float) -> float:
