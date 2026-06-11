@@ -137,6 +137,12 @@ st.markdown(
 )
 
 # ── Bandeau PDF ───────────────────────────────────────────────────────────────
+import os
+
+_BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+_ETF_LIST_PDF = os.path.join(_BASE_DIR, "liste_etf_supportes.pdf")
+_PRODUCT_PDF = os.path.join(_BASE_DIR, "presentation_exupery.pdf")
+
 st.markdown(
     """
     <div style="
@@ -170,6 +176,8 @@ with col_pdf1:
                 use_container_width=True,
                 key="pdf_etf_list_top",
             )
+    else:
+        st.error(f"PDF introuvable : {_ETF_LIST_PDF}")
 
 with col_pdf2:
     if os.path.exists(_PRODUCT_PDF):
@@ -182,6 +190,9 @@ with col_pdf2:
                 use_container_width=True,
                 key="pdf_product_top",
             )
+    else:
+        st.error(f"PDF introuvable : {_PRODUCT_PDF}")
+        
 # ─── Sidebar ──────────────────────────────────────────────────────────────────
 with st.sidebar:
     st.header("Mon Portefeuille")
