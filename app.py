@@ -125,12 +125,14 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
+# ─── PDF qui s'affichent ─────────────────────────────────────────────
+
 import os
 
-# ─── PDF ressources ───────────────────────────────────────────────────────────
-_ASSETS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets")
-_ETF_LIST_PDF = os.path.join(_ASSETS_DIR, "liste_etf_supportes.pdf")
-_PRODUCT_PDF = os.path.join(_ASSETS_DIR, "presentation_exupery.pdf")
+_BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+_ETF_LIST_PDF = os.path.join(_BASE_DIR, "liste_etf_supportes.pdf")
+_PRODUCT_PDF = os.path.join(_BASE_DIR, "presentation_exupery.pdf")
 
 st.markdown(
     """
