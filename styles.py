@@ -474,32 +474,46 @@ button span,
 [role="button"] span {
     color: #0d2848 !important;
 }
-/* ── Boutons de téléchargement PDF ───────────────────────────────────── */
-[data-testid="stDownloadButton"] > button {
+/* ── Boutons PDF / boutons secondaires Streamlit ───────────────────────── */
+[data-testid="stDownloadButton"] button,
+[data-testid="stDownloadButton"] > button,
+button[kind="secondary"],
+button[data-testid="stBaseButton-secondary"],
+div[data-testid="stDownloadButton"] button {
     background: #0d2848 !important;
     color: #ffffff !important;
     border: 1px solid rgba(255,255,255,0.18) !important;
     border-radius: 12px !important;
     font-weight: 700 !important;
     box-shadow: 0 4px 16px rgba(13,40,72,0.18) !important;
+    opacity: 1 !important;
 }
 
-[data-testid="stDownloadButton"] > button:hover {
+[data-testid="stDownloadButton"] button:hover,
+[data-testid="stDownloadButton"] > button:hover,
+button[kind="secondary"]:hover,
+button[data-testid="stBaseButton-secondary"]:hover,
+div[data-testid="stDownloadButton"] button:hover {
     background: #1e4480 !important;
     color: #ffffff !important;
     border: 1px solid rgba(255,255,255,0.22) !important;
+    opacity: 1 !important;
 }
 
-[data-testid="stDownloadButton"] > button p,
-[data-testid="stDownloadButton"] > button span,
-[data-testid="stDownloadButton"] > button div {
+[data-testid="stDownloadButton"] button *,
+[data-testid="stDownloadButton"] > button *,
+button[kind="secondary"] *,
+button[data-testid="stBaseButton-secondary"] *,
+div[data-testid="stDownloadButton"] button * {
     color: #ffffff !important;
-}
-
-/* Icône éventuelle dans le bouton */
-[data-testid="stDownloadButton"] > button svg {
     fill: #ffffff !important;
+}
+
+[data-testid="stDownloadButton"] svg,
+button[kind="secondary"] svg,
+button[data-testid="stBaseButton-secondary"] svg {
     color: #ffffff !important;
+    fill: #ffffff !important;
 }
 """
 
