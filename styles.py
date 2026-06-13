@@ -44,11 +44,7 @@ _CSS = """
 .main .block-container            { background: transparent !important; }
 
 /* ── 2. Typographie globale ──────────────────────────────────────────────────── */
-/*
-   ⚠️  On NE cible PAS "*" pour éviter d'écraser la police Material Icons/Symbols
-   de Streamlit (expand_more, arrow_drop_down, etc.).
-   On cible uniquement les conteneurs de contenu réel.
-*/
+
 body,
 [data-testid="stMarkdownContainer"],
 [data-testid="stText"],
@@ -477,6 +473,33 @@ button,
 button span,
 [role="button"] span {
     color: #0d2848 !important;
+}
+/* ── Boutons de téléchargement PDF ───────────────────────────────────── */
+[data-testid="stDownloadButton"] > button {
+    background: #0d2848 !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255,255,255,0.18) !important;
+    border-radius: 12px !important;
+    font-weight: 700 !important;
+    box-shadow: 0 4px 16px rgba(13,40,72,0.18) !important;
+}
+
+[data-testid="stDownloadButton"] > button:hover {
+    background: #1e4480 !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255,255,255,0.22) !important;
+}
+
+[data-testid="stDownloadButton"] > button p,
+[data-testid="stDownloadButton"] > button span,
+[data-testid="stDownloadButton"] > button div {
+    color: #ffffff !important;
+}
+
+/* Icône éventuelle dans le bouton */
+[data-testid="stDownloadButton"] > button svg {
+    fill: #ffffff !important;
+    color: #ffffff !important;
 }
 """
 
